@@ -2,7 +2,8 @@
 // require('dotenv').config({path: './env'})
 
 import dotenv from "dotenv";
-import connectDB from "./db/dbone.js";
+import connectDB from "./db/dbOne.js";
+import { app } from "./app.js";
 
 dotenv.config({
   path: "./.env",
