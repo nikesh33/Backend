@@ -9,42 +9,13 @@ dotenv.config({
 // //Way Two To Connect to DB
 connectDB()
   .then(() => {
-    app.on("error", (error) => {
-      console.log("got an error", error);
-    });
-
     app.listen(process.env.PORT || 8000, () => {
-      console.log(`Server is running at port : ${process.env.PORT}`);
+      console.log(`⚙️  Server is running at port : ${process.env.PORT}`);
     });
-    
   })
   .catch((err) => {
     console.log("MONGO db connection failed !!! ", err);
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* //Way One To Connect to DB
 import express from "express";
