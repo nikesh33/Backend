@@ -1,6 +1,3 @@
-// //Way Two To Connect to DB
-// require('dotenv').config({path: './env'})
-
 import dotenv from "dotenv";
 import connectDB from "./db/dbOne.js";
 import { app } from "./app.js";
@@ -9,6 +6,7 @@ dotenv.config({
   path: "./.env",
 });
 
+// //Way Two To Connect to DB
 connectDB()
   .then(() => {
     app.on("error", (error) => {
@@ -23,6 +21,30 @@ connectDB()
   .catch((err) => {
     console.log("MONGO db connection failed !!! ", err);
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* //Way One To Connect to DB
 import express from "express";
